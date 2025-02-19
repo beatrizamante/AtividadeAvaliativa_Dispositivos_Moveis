@@ -33,14 +33,10 @@ Execute testes em **Jest**, por:
 npm run test
 ```
 
-Execute testes **end-to-end (E2E)** com **Cypress**, por:  
+Execute testes **end-to-end (E2E)** com **Maestro**, por:  
 
 ```sh
-cypress open
+maestro test <file.yml>
 ```
 
-ou para escolher o ambiente em  
 
-```sh
-cypress run
-```
