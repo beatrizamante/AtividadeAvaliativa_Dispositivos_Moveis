@@ -2,11 +2,12 @@ import { render, screen, fireEvent } from "@testing-library/react-native";
 import { router } from "expo-router";
 import Login from "../../app/index";
 
-jest.mock("expo-router", () => {
-  router: {
-    replace: jest.fn();
-  }
-});
+jest.mock("expo-router", () => ({
+    router: {
+      replace: jest.fn()
+    }
+  }));
+  
 
 describe("index", () => {
   describe("renders login screen", () => {
@@ -14,8 +15,8 @@ describe("index", () => {
       render(<Login />);
 
       expect(
-        screen.getAllByText("Please, sign up to fly with us!")
-      ).toBeTruthy();
+        screen.getAllByText("Please, sign up to fly with us!").length
+      ).toBeGreaterThan(0);
 
       expect(screen.getByPlaceholderText("Login")).toBeTruthy();
       expect(screen.getByPlaceholderText("Password")).toBeTruthy();

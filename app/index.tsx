@@ -10,7 +10,6 @@ import { router } from "expo-router";
 import React from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import ImageButton from "../components/ImageButton";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Login() {
