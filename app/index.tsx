@@ -29,12 +29,14 @@ export default function Login() {
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView 
+      style={styles.container}>
         <View style={styles.container_up}>
           <Text style={styles.welcome_text}>
             Please, sign up to fly with us!
           </Text>
           <TextInput
+            testID="input-username"
             style={styles.input}
             onChangeText={onChangeLogin}
             value={login}
@@ -42,6 +44,7 @@ export default function Login() {
             placeholderTextColor={"#706C6C"}
           />
           <TextInput
+            testID="input-password"
             style={styles.input}
             onChangeText={onChangePassword}
             value={password}
@@ -55,6 +58,7 @@ export default function Login() {
           <View style={styles.container_down}>  
           <Image source={require("../assets/image_login.png")}></Image>
           <ImageButton
+            testID={"LoginButton"}
             onPress={handleLogin}
             uri={require("../assets/image_button.png")}
           />

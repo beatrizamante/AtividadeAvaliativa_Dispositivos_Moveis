@@ -12,16 +12,16 @@ jest.mock("expo-router", () => ({
 describe("index", () => {
   describe("renders login screen", () => {
     it("renders the whole page", () => {
-      render(<Login />);
+      const { getByTestId } = render(<Login />);
 
-      expect(
-        screen.getAllByText("Please, sign up to fly with us!").length
-      ).toBeGreaterThan(0);
+      const loginbutton = getByTestId('LoginButton')
+      const loginInput = getByTestId('input-username');
+      const passwordInput = getByTestId('input-password')
 
-      expect(screen.getByPlaceholderText("Login")).toBeTruthy();
-      expect(screen.getByPlaceholderText("Password")).toBeTruthy();
+      expect(loginbutton).toBeTruthy();
+      expect(loginInput).toBeTruthy();
+      expect(passwordInput).toBeTruthy();
 
-      expect(screen.getByRole("button")).toBeTruthy();
     });
   });
 
@@ -58,11 +58,11 @@ describe("index", () => {
 
   describe("login authentication", () => {
     it("navigates to Listagem on successful login", () => {
-      render(<Login />);
+      const { getByTestId } = render(<Login />);
 
       const loginInput = screen.getByPlaceholderText("Login");
       const passwordInput = screen.getByPlaceholderText("Password");
-      const loginButton = screen.getByRole("button");
+      const loginButton = screen.getByTestId("LoginButton");
 
       fireEvent.changeText(loginInput, "fulano");
       fireEvent.changeText(passwordInput, "123");

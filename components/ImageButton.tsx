@@ -11,11 +11,13 @@ import React from "react";
 type ImageButtonProps = {
   onPress: () => void;
   uri: ImageSourcePropType;
+  testID?: string;
 };
 
 export default function ImageButton({
   onPress,
   uri,
+  testID
 }: ImageButtonProps) {
   return (
     <View style={styles.button_container}>
