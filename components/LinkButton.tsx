@@ -1,8 +1,6 @@
 import {
     View,
-    Image,
     Text,
-    ImageSourcePropType,
     StyleSheet,
     TouchableOpacity,
   } from "react-native";
@@ -10,10 +8,12 @@ import {
   
   type ImageButtonProps = {
     onPress: () => void;
+    testID?: string;
   };
   
   export default function ImageButton({
     onPress,
+    testID
   }: ImageButtonProps) {
     return (
       <View>

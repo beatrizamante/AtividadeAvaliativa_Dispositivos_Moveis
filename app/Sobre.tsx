@@ -2,7 +2,6 @@ import { View, Text, Linking, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import LinkButton from '../components/LinkButton'
 import Footer from '../components/Footer'
-import Header from '../components/Header'
 
 export default function Sobre() {
   const openLink = () => {
@@ -15,7 +14,9 @@ export default function Sobre() {
       <View style={style.container_up}>
         <Image source={require('../assets/profile_pic.png')} style={style.avatar}></Image>
       <Text style={style.name}>Beatriz Amante</Text>
-      <LinkButton onPress={openLink}></LinkButton>
+      <LinkButton 
+      testID="git-button"
+      onPress={openLink}></LinkButton>
       </View>
       <View style={style.container_down}>
       <Text style={style.about_title}>Sobre:</Text>

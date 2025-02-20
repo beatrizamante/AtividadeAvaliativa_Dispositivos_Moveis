@@ -1,13 +1,13 @@
 import { render, screen, fireEvent } from "@testing-library/react-native";
 import { router } from "expo-router";
 import Login from "../../app/index";
+import React from "react";
 
 jest.mock("expo-router", () => ({
     router: {
       replace: jest.fn()
     }
-  }));
-  
+  }));  
 
 describe("index", () => {
   describe("renders login screen", () => {

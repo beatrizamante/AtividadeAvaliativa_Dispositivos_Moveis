@@ -58,7 +58,7 @@ export default function Login() {
           <View style={styles.container_down}>  
           <Image source={require("../assets/image_login.png")}></Image>
           <ImageButton
-            testID={"LoginButton"}
+            testID="LoginButton"
             onPress={handleLogin}
             uri={require("../assets/image_button.png")}
           />
