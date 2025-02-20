@@ -21,7 +21,7 @@ export default function ImageButton({
 }: ImageButtonProps) {
   return (
     <View style={styles.button_container}>
-      <TouchableOpacity onPress={onPress} style={styles.button}>
+            <TouchableOpacity testID="login-button" onPress={onPress} style={styles.button}>
         <Image source={uri}></Image>
       </TouchableOpacity>
     </View>

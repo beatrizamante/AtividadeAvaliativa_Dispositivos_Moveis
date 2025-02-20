@@ -14,13 +14,9 @@ describe("index", () => {
     it("renders the whole page", () => {
       const { getByTestId } = render(<Login />);
 
-      const loginbutton = getByTestId('LoginButton')
-      const loginInput = getByTestId('input-username');
-      const passwordInput = getByTestId('input-password')
+      const welcomeTest = getByTestId('welcome-text');
 
-      expect(loginbutton).toBeTruthy();
-      expect(loginInput).toBeTruthy();
-      expect(passwordInput).toBeTruthy();
+      expect(welcomeTest).toBeVisible();
 
     });
   });
@@ -46,7 +42,7 @@ describe("index", () => {
 
       const loginInput = screen.getByPlaceholderText("Login");
       const passwordInput = screen.getByPlaceholderText("Password");
-      const loginButton = screen.getByRole("button");
+      const loginButton = screen.getByTestId("login-button");
 
       fireEvent.changeText(loginInput, "berratriz");
       fireEvent.changeText(passwordInput, "meee");
@@ -62,7 +58,7 @@ describe("index", () => {
 
       const loginInput = screen.getByPlaceholderText("Login");
       const passwordInput = screen.getByPlaceholderText("Password");
-      const loginButton = screen.getByTestId("LoginButton");
+      const loginButton = screen.getByTestId("login-button");
 
       fireEvent.changeText(loginInput, "fulano");
       fireEvent.changeText(passwordInput, "123");
