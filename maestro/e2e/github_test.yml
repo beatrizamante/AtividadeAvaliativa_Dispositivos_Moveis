@@ -10,7 +10,7 @@ appId: com.avaliacao2.app
 - inputText: "123"
 - tapOn:
     id: login-button
-- assertVisible: "Listagem"
+- assertVisible: "Vôos"
 - tapOn:
     id: menu-button
 - tapOn: "Sobre"

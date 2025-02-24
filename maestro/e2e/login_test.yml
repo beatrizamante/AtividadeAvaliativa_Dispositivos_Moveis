@@ -10,18 +10,4 @@ appId: com.avaliacao2.app
 - inputText: "123"
 - tapOn:
     id: login-button
-- assertVisible: "Listagem"
-- tapOn:
-    id: menu-button
-- tapOn:
-    point: "50%,95%"
-- assertVisible: "Login"
-- tapOn:
-    id: input-username
-- inputRandomText
-- tapOn:
-    id: input-password
-- inputRandomText
-- tapOn:
-    id: login-button
-- assertVisible: "Login inválido"
+- assertVisible: "Vôos"

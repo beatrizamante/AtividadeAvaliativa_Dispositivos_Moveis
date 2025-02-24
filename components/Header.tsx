@@ -64,7 +64,7 @@ export default function Header({ context }: contextProps) {
         ></Image>
         <Text style={style.text_header}>ocean airlines . . .</Text>
       </View>
-      <HamButton testId="menu-button" onPress={handleNav} />
+      <HamButton testID="menu-button" onPress={handleNav} />
     </View>
   );
 }
