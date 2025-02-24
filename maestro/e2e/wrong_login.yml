@@ -10,4 +10,4 @@ appId: com.avaliacao2.app
 - inputText: "bla"
 - tapOn:
     id: login-button
-- assertVisible: "Login inválido"
+- assertVisible: "Invalid Login"
