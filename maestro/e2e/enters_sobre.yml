@@ -1,0 +1,16 @@
+
+appId: com.avaliacao2.app
+---
+- openLink: exp://172.20.24.234:8081
+- tapOn:
+    id: input-username
+- inputText: "fulano"
+- tapOn:
+    id: input-password
+- inputText: "123"
+- tapOn:
+    id: login-button
+- assertVisible: "Vôos"
+- tapOn:
+    id: menu-button
+- tapOn: "Sobre"
