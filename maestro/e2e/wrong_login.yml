@@ -1,0 +1,13 @@
+appId: com.avaliacao2.app
+
+---
+- openLink: exp://172.20.24.234:8081
+- tapOn:
+    id: input-username
+- inputText: "fulan"
+- tapOn:
+    id: input-password
+- inputText: "bla"
+- tapOn:
+    id: login-button
+- assertVisible: "Login inválido"

@@ -4,15 +4,17 @@ import React from "react";
 
 type HamButtonProps = {
   onPress: () => void
+  testId: string;
 };
 
-export default function HamButton({ onPress }: HamButtonProps) {
+export default function HamButton({ onPress, testId }: HamButtonProps) {
 
   return (
     <View>
         <TouchableOpacity 
-        testID="menu-button"
-        onPress={onPress}>
+        testID={testId}
+        onPress={onPress}
+        >
             <Ionicons name="menu" size={50} color={"white"}></Ionicons>
         </TouchableOpacity>
       </View>

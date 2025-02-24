@@ -1,7 +1,7 @@
 appId: com.avaliacao2.app
 
 ---
-- openLink: exp://172.0.0.1:8081
+- openLink: exp://172.20.24.234:8081
 - tapOn:
     id: input-username
 - inputText: "fulano"
@@ -9,13 +9,13 @@ appId: com.avaliacao2.app
     id: input-password
 - inputText: "123"
 - tapOn:
-    id: LoginButton
+    id: login-button
 - assertVisible: "Listagem"
 - tapOn:
-    id: "menu-button"
+    id: menu-button
 - tapOn:
     point: "50%,95%"
-- assertVisible: "LoginButtom"
+- assertVisible: "Login"
 - tapOn:
     id: input-username
 - inputRandomText
@@ -23,5 +23,5 @@ appId: com.avaliacao2.app
     id: input-password
 - inputRandomText
 - tapOn:
-    id: Login
+    id: login-button
 - assertVisible: "Login inválido"

@@ -1,7 +1,7 @@
 
 appId: com.avaliacao2.app
 ---
-- openLink: exp://172.0.0.1:8081
+- openLink: exp://172.20.24.234:8081
 - tapOn:
     id: input-username
 - inputText: "fulano"
@@ -9,12 +9,12 @@ appId: com.avaliacao2.app
     id: input-password
 - inputText: "123"
 - tapOn:
-    id: LoginButton
+    id: login-button
 - assertVisible: "Listagem"
 - tapOn:
-    id: "menu-button"
+    id: menu-button
 - tapOn: "Sobre"
 - tapOn:
-    id: "git-button"
+    id: git-button
 - assertVisible:
     id: "com.android.chrome:id/url_bar"
