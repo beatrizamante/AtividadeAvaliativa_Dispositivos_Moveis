@@ -1,7 +1,7 @@
 appId: com.avaliacao2.app
 
 ---
-- openLink: exp://172.20.24.234:8081
+- openLink: exp://172.20.24.168:8081
 - tapOn:
     id: input-username
 - inputText: "fulano"
