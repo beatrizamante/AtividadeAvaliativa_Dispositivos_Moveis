@@ -17,7 +17,7 @@ import {
   }: ImageButtonProps) {
     return (
       <View>
-        <TouchableOpacity onPress={onPress} style={styles.button}>
+        <TouchableOpacity onPress={onPress} style={styles.button} testID={testID}>
             <Text style={styles.text}>Link to GitHub</Text>
         </TouchableOpacity>
       </View>
